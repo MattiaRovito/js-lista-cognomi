@@ -18,3 +18,26 @@ otherSurname.push(surname);
 otherSurname = otherSurname.sort()
 
 document.getElementById('order').innerHTML = otherSurname;
+
+
+// prima soluzione
+
+// var position;
+
+// for(var i = 0; i < otherSurname.length; i++){
+//     if (surname == otherSurname[i]){
+//         position = i + 1;
+//     }
+// }
+
+// document.getElementById('posizione').innerHTML = position;
+
+// oppure, seconda soluzione
+
+for(var i = 0; i < otherSurname.length; i++){
+    if (surname == otherSurname[i]){
+        document.getElementById('posizione').innerHTML = i + 1;
+    }
+}
+
+
